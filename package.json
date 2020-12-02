@@ -1,8 +1,11 @@
 {
   "name": "api-bandtec-social",
   "version": "1.0.0",
+  "engines": {
+    "node": "12"
+  },
   "description": "backend",
-  "main": "index.js",
+  "main": "node server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"

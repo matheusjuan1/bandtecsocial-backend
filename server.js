@@ -25,7 +25,7 @@ app.use('/usuario', UsuarioRoutes);
 
 app.listen(3030, function (err) {
     if (!err) {
-        console.log("Servidor iniciado na porta 3030: http://localhost:3030/");
+        console.log("Running !");
     }
     else {
         console.log(err);
