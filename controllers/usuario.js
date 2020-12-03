@@ -57,7 +57,8 @@ module.exports = {
 
     getAll: async function(req, res) {
         await Usuario.findAll({
-            attributes: ['id', 'name', 'email', 'cargo', 'ftperfil']
+            attributes: ['id', 'name', 'email', 'cargo', 'ftperfil'],
+            order: [['name']]
         }).then(function (req) {
             res.status(200).json(req)
         }).catch(function (erro) {
